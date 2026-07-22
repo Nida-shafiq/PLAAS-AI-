@@ -1,4 +1,4 @@
-﻿from langgraph.graph import StateGraph, END
+from langgraph.graph import StateGraph, END
 from langgraph.prebuilt import ToolNode, tools_condition
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import SystemMessage
@@ -21,7 +21,7 @@ SYSTEM_PROMPT = (
 tools = [faiss_legal_search, web_legal_search, legal_disclaimer]
 
 llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",
+    model="gemini-flash-latest",
     google_api_key=GEMINI_API_KEY,
     temperature=0.2,
 )
