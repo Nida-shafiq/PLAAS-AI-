@@ -16,9 +16,9 @@ from nltk.tokenize import sent_tokenize
 
 # ---------------- CONFIG ----------------
 PDF_FILES = [
-    "dataaa/CrPC.pdf",
-    "dataaa/THE POLICE ORDER, 2002.pdf",
-    "dataaa/The Constitution of pak.pdf"
+    "data/raw_pdfs/Code_of_criminal_procedure_1898.pdf",
+    "data/raw_pdfs/the_police_order-_2002-pdf.pdf",
+    "data/raw_pdfs/Constitution_of_Pakistan.pdf"
 ]
 BI_ENCODER = "law-ai/InLegalBERT"
 RERANKER = "cross-encoder/ms-marco-MiniLM-L-6-v2"
@@ -27,8 +27,8 @@ RERANK_TOP_K = 7
 MAX_CHARS = 900
 OVERLAP_CHARS = 250
 MIN_CHARS = 40
-FAISS_INDEX_PATH = "legal_hnsw.index"
-META_JSONL_PATH = "legal_corpus_meta.jsonl"
+FAISS_INDEX_PATH = "data/legal_hnsw.index"
+META_JSONL_PATH = "data/legal_corpus_meta.jsonl"
 
 # Clause pattern for legal texts
 CLAUSE_PATTERN = re.compile(
