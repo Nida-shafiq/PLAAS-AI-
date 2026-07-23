@@ -1,6 +1,6 @@
-﻿__pycache__/
+__pycache__/
 *.pyc
 .env
 venv/
-data/legal_hnsw.index
-data/legal_corpus_meta.jsonl
+
+
