@@ -21,7 +21,7 @@ SYSTEM_PROMPT = (
 tools = [faiss_legal_search, web_legal_search, legal_disclaimer]
 
 llm = ChatGoogleGenerativeAI(
-    model="gemini-flash-latest",
+    model="gemini-2.5-flash-lite",
     google_api_key=GEMINI_API_KEY,
     temperature=0.2,
 )
